@@ -27,3 +27,15 @@ RastgeleIsimIntCallBack second(){
 
   return print1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
