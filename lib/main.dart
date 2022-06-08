@@ -4,6 +4,7 @@ import 'package:dartdetay/Iterable/map/map1.dart';
 import 'package:dartdetay/Iterable/set/set1.dart';
 import 'package:dartdetay/String/string1.dart';
 import 'package:dartdetay/enum/enum1.dart';
+import 'package:dartdetay/functionalProgramming/ana.dart';
 import 'package:dartdetay/int/int1.dart';
 
 
@@ -44,7 +45,8 @@ class _HomeState extends State<Home> {
           goNavigate(context,set1(),"Set"),
           goNavigate(context,enum1(),"Enum"),
           goNavigate(context,string1(),"String"),
-           goNavigate(context,int1(),"int"),
+          goNavigate(context,int1(),"int"),
+          goNavigate(context,anaClass(),"FunctionalProgramming"),
           
         ],
       )
