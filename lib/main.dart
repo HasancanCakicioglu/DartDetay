@@ -1,13 +1,19 @@
 import 'dart:isolate';
 
+import 'package:dartdetay/Call/callPage.dart';
 import 'package:dartdetay/Dartz/Either/1/dartzEither1.dart';
 import 'package:dartdetay/Iterable/List/List1/list1.dart';
 import 'package:dartdetay/Iterable/map/map1.dart';
 import 'package:dartdetay/Iterable/set/set1.dart';
 import 'package:dartdetay/String/string1.dart';
+import 'package:dartdetay/addPostFrameCallback/addPostFrameCallbackPage.dart';
 import 'package:dartdetay/enum/enum1.dart';
 import 'package:dartdetay/functionalProgramming/ana.dart';
 import 'package:dartdetay/int/int1.dart';
+import 'package:dartdetay/karmasik/oyunListeGuncelleme.dart';
+import 'package:dartdetay/microTask/microtaskPage.dart';
+import 'package:dartdetay/mounted/mountedPage.dart';
+import 'package:dartdetay/unawaited/unawaitedPage.dart';
 import 'package:flutter/foundation.dart';
 
 
@@ -78,6 +84,12 @@ class _HomeState extends State<Home> {
           goNavigate(context,string1(),"String"),
           goNavigate(context,int1(),"int"),
           goNavigate(context,anaClass(),"FunctionalProgramming"),
+          goNavigate(context,oyunListeGuncellemeclass(),"OyunListeGuncelleme"),
+          goNavigate(context,addPostFrameCallbackclass(),"addPostFrameCallBack"),
+          goNavigate(context,mountedclass(),"mounted"),
+          goNavigate(context,callclass(),"call"),
+          goNavigate(context,unawaitedclass(),"unawaited"),
+          goNavigate(context,microtaskclass(),"microtask"),
           
         ],
       )
