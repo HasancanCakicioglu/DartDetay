@@ -2,6 +2,8 @@ import 'dart:isolate';
 
 import 'package:dartdetay/Call/callPage.dart';
 import 'package:dartdetay/Dartz/Either/1/dartzEither1.dart';
+import 'package:dartdetay/Dartz/fetchData/fetchData_1.dart';
+import 'package:dartdetay/Dartz/fetchData/fetchData_2.dart';
 import 'package:dartdetay/Iterable/List/List1/list1.dart';
 import 'package:dartdetay/Iterable/map/map1.dart';
 import 'package:dartdetay/Iterable/set/set1.dart';
@@ -77,6 +79,8 @@ class _HomeState extends State<Home> {
       body: Wrap(
         children: [
           goNavigate(context,dartzEither1view(),"Dartz"),
+          goNavigate(context,FetchData_1class(),"Dartz fetch 1"),
+          goNavigate(context,FetchData_2class(),"Dartz fetch 2"),
           goNavigate(context,list1(),"List"),
           goNavigate(context,mapclass(),"Map"),
           goNavigate(context,set1(),"Set"),
@@ -90,6 +94,7 @@ class _HomeState extends State<Home> {
           goNavigate(context,callclass(),"call"),
           goNavigate(context,unawaitedclass(),"unawaited"),
           goNavigate(context,microtaskclass(),"microtask"),
+          
           
         ],
       )
